@@ -36,10 +36,7 @@ h1 {
     text-align: center;
 }
 
-.top-container {
-    display: grid;
-    grid-template-columns: 1fr 2fr; /* Two columns, each taking 50% of the width */
-}
+
 
 .showcase {
  
@@ -122,10 +119,45 @@ h1 {
     padding-top: 50px;
 }
 
-
+body > footer {
+    background-color: rgb(91, 91, 91);
+    color: white;
+    font-size: 0.85em;
+    text-align: center;
+    height: 20px;
+    line-height: 20px;
+    width: 100%;
+ }
+ .sub{
+    width: 191px;
+    height: 80px;
+    background-color: black;
+    color: white;
+    font-size: xx-large;
+    margin-bottom: 100px;
+ }
+ .middle{
+    padding-left: 43%;
+ }
+.hidden{
+    padding-left: 25%;
+}
 
 @media screen and (max-width: 1000px) {
     .no_show {
+        display: none;
+    }
+    .unhidden{
+        display: none;
+    }
+}
+@media screen and  (min-width: 1000px){
+    .top-container {
+        display: grid;
+        grid-template-columns: 1fr 2fr; /* Two columns, each taking 50% of the width */
+
+    }
+    .hide{
         display: none;
     }
 }
