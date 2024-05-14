@@ -118,7 +118,9 @@ h1 {
  padding: 1rem;
  grid-area: toptwos;
 }
-
+.pad{
+    padding-top: 50px;
+}
 
 
 
