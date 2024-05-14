@@ -1,22 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Navigation Bar</title>
-<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-<nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="me.html">About Me</a></li>
-        <li><a href="classes.html">Acadmics</a></li>
-        <li><a href="question.html">Questions</a></li>
-    </ul>
-</nav>
-<hr>
-<h1>What Questions do you have?</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="me.html">About Me</a></li>
+            <li><a href="classes.html">Acadmics</a></li>
+            <li><a href="question.html">Questions</a></li>
+        </ul>
+    </nav>
+    <hr>
+    <h1>What Questions do you have?</h1>
+    <form action="thankyou.html" method="get">
+        <label for="fname" class="lables">
+            First Name:
+            <input class="form" autofocus type="text" name="first_name" id="fname" required placeholder="First Name" />
+        </label>
+        <br>
+        <br>
+        <br>
+        <label for="lname" class="lables">
+            Last Name:
+            <input class="form" type="text" name="last_name" id="lname" required placeholder="Last Name" />
+        </label>
+        <br>
+        <br>
+        <br>
+        <label for="email" class="lables">
+            Email: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input class="form" type="email" name="Email" id="email" required placeholder="Email" />
+        </label>
+        <br>
+        <br>
+        <br>
+        <div class="lables">
+            <h3>What question do you have?</h3>
+
+            <textarea class="formBox" rows="8" cols="100">
+    Enter text here...
+    </textarea>
+        </div>
+        <input class="submit" type="submit" value="Submit" />
+    </form>
+
 </body>
+
 </html>

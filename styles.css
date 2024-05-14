@@ -55,6 +55,73 @@ h1 {
 .me{
     height: 550px;
 }
+
+.form{
+    width: 30%;
+    height: 38px;
+    font-size: large;
+}
+.formBox{
+    font-size: medium;
+}
+.lables{
+    padding: 50px;
+}
+
+
+.top_class
+{
+    display:grid;
+    grid-gap:20px;
+   /* grid-template-columns:2fr 1fr; */
+    grid-template-areas:
+    'certs certs top'
+
+
+}
+.cert
+{
+   /* grid-row: 1/3; */
+   grid-area: certs;
+   min-height: 400px;
+   background: url("Cert_photo.webp");
+   background-size: cover;
+   padding: 3rem;
+   box-shadow: var(--shadow);
+}
+.top{
+ padding: 1rem;
+}
+
+
+.top_class2
+{
+    display:grid;
+    grid-gap:20px;
+   /* grid-template-columns:2fr 1fr; */
+    grid-template-areas:
+    'toptwos class class'
+
+
+}
+.class
+{
+   /* grid-row: 1/3; */
+   grid-area: class;
+   min-height: 400px;
+   background: url("grad.webp");
+   background-size: cover;
+   padding: 3rem;
+   box-shadow: var(--shadow);
+}
+.top2{
+ padding: 1rem;
+ grid-area: toptwos;
+}
+
+
+
+
 @media screen and (max-width: 1000px) {
     .no_show {
         display: none;
